@@ -1,6 +1,6 @@
 # Site de receitas feito com Django
 
-Necessário criar um arquivo settings.py na pasta alura receita.
+Necessário criar um arquivo settings.py na pasta alurareceita.
 
 ### Migrações
 
