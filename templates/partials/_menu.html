@@ -57,6 +57,9 @@
                         <div class="classynav">
                             <ul>
                                 {% if user.is_authenticated %}
+                                    {% if user.is_superuser %}
+                                        <li><a href="{% url 'admin:index' %}">Admin. do Site</a></li>
+                                    {% endif %}
                                     <li><a href="{% url 'index' %}">Página principal</a></li>
                                     <li><a href="{% url 'dashboard' %}">Minhas Receitas</a></li>
                                     <li><a href="{% url 'cria_receita' %}">Nova Receita</a></li>
